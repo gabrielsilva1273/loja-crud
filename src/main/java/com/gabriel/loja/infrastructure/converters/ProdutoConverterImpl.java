@@ -2,7 +2,9 @@ package com.gabriel.loja.infrastructure.converters;
 
 import com.gabriel.loja.domain.Produto;
 import com.gabriel.loja.infrastructure.entities.ProdutoEntity;
+import org.springframework.stereotype.Service;
 
+@Service
 public class ProdutoConverterImpl implements Converter<ProdutoEntity, Produto>{
     @Override
     public ProdutoEntity toEntity(Produto domain) {

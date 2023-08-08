@@ -3,8 +3,10 @@ package com.gabriel.loja.infrastructure.converters;
 import com.gabriel.loja.domain.Venda;
 import com.gabriel.loja.infrastructure.entities.VendaEntity;
 import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Service;
 
 @AllArgsConstructor
+@Service
 public class VendaConverterImpl implements Converter<VendaEntity, Venda> {
 
     private final ClienteConverterImpl clienteConverter;
